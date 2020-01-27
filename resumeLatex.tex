@@ -1,0 +1,161 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-20pt}
+\begin{center}
+	{\Huge \scshape {\textbf{Jorge Quiroz}}}\\
+    \vspace{1mm}
+	New York, NY $\cdot$ gerschjr@gmail.com $\cdot$ 347-990-8158 $\cdot$ jquiroz728.github.io $\cdot$ linkedin.com/in/jorgemquiroz\\
+\end{center}
+
+%==== Education ====%
+\header{\textbf{Education}}
+\textbf{The City College of New York, City University of New York (CUNY)}\hfill New York, NY\\
+Bachelor of Science, Computer Science \hfill  Expected May 2021\\
+\textbf{Relevant Coursework:} \\
+Data Structures, Algorithms, Software Design, Operating Systems, Database Systems
+\vspace{2mm}
+
+\header{\textbf{Skills \& Interests}}
+\vspace{1mm}
+\begin{tabular}{ l l }
+	\textbf{Programming Languages:}   & Python, JavaScript, Java, Go, HTML/CSS, Swift, SQL                  \\
+	\textbf{Frameworks/Technologies:} & React, Node.js/Express, PostgreSQL, MongoDB, Git/Github, Vim \\
+	\textbf{Spoken Languages:}        & Spanish (Native), French (Conversational)                    \\
+	\textbf{Interests:}               & Sports, Traveling, Pool, Chess, Car Enthusiast           \\
+\end{tabular}
+\vspace{2mm}
+
+%==== Experience ====%
+\header{\textbf{Relevant Experience}}
+\vspace{1mm}
+
+\textbf{CUNY Tech Prep - NYC Tech Talent Pipeline} \hfill New York, NY\\
+\textit{Student Software Developer} \hfill June 2019 - Present\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+	\item Selected for a full stack JavaScript training program, as one of 125 students out of 400+ applicants
+	\item Learning in-demand technologies like React, Node.js + Express, and PostgreSQL as well as industry best practices for design, implementation, and deployment such as MVC, version control with Git/GitHub, agile \& Scrum with Trello and Slack, test driven development, and CI/CD
+\end{itemize}
+\textbf{Facebook} \hfill New York, NY\\
+\textit{Above \& Beyond Computer Science (ABCS) Student} \hfill September 2019 - November 2019\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+	\item Selected for a competitive workshop series that provides extensive preparation for technical interviews
+	\item Gained in-depth and applied practice to master common data structures and algorithms and learn technical interview best practices
+\end{itemize}
+
+\header{\textbf{Projects} \hfill github.com/JQuiroz728} 
+\vspace{1mm}
+
+{\textbf{Bluhr}} {\sl Go} \hfill September 2019 - October 2019\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+	\item Created a web service that allows users to upload images and transform them into various geometric primitives
+    \item Developed the user interface using Go to create a form where users upload desired images, customize image parameters, and are given the ability to download image results
+    
+    \end{itemize}
+    
+{\textbf{Perfect Pantry}} {\sl React, Node.js/Express, Sequelize} \hfill September 2019 - December 2019\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+	\item Developed an online virtual pantry system in a team of 4 that suggests recipes based upon owned ingredients and dietary restrictions, as well as keeps track of expiring products
+    \item Implemented dashboard and recipes pages using React to properly organize and display ingredients and generated recipes
+    \item Built RESTful API using Express.js to generate and process new recipes daily
+    \end{itemize}
+
+{\textbf{Cross The Road}} {\sl Python} \hfill April 2019\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+	\item Implemented a single player game which consists of a play moving along a map through various levels with the objective of reaching a goal while trying to avoid collisions with enemies and obstacles
+    \item Developed a graphical user interface using Python and the Pygame library to efficiently process user movements and object collisions
+    \end{itemize}
+
+
+%==== Experience ====%
+\header{\textbf{Supporting Experience}}
+\vspace{1mm}
+
+\textbf{Manhattan Three Decker Restaurant} \hfill Brooklyn, NY\\
+\textit{Bus Person | Courier} \hfill June 2012 - Present\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+	\item Organize and lead a team of 10 employees to handle all customer needs in a timely manner
+	\item Remove dishes and trash after guest departure and take items to kitchen for disposal or cleaning
+    \item Deliver food and beverages to customers in the neighborhood
+    \item Notify any dining area issues to management promptly
+\end{itemize}
+
+
+
+\ 
+\end{document}
