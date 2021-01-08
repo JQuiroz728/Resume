@@ -5,6 +5,8 @@
     \usepackage{textcomp}
     \usepackage[utf8]{inputenc}
     \usepackage[T1]{fontenc}
+    \usepackage[left=2cm,right=2cm]{geometry}
+    \usepackage{hyperref}
     \textheight=10in
     \pagestyle{empty}
     \raggedright
@@ -70,11 +72,11 @@
     
 
 %==== Profile ====%
-\vspace*{-20pt}
+\vspace*{-50pt}
 \begin{center}
 	{\Huge \scshape {\textbf{Jorge Quiroz}}}\\
     \vspace{1mm}
-	New York, NY $\cdot$ gerschjr@gmail.com $\cdot$ 347-990-8158 $\cdot$ jquiroz728.github.io $\cdot$ linkedin.com/in/jorgemquiroz\\
+	New York, NY $\cdot$ gerschjr@gmail.com $\cdot$ 347-990-8158 $\cdot$ \href{https://jquiroz728.github.io/}{jquiroz728.github.io} $\cdot$ \href{https://www.linkedin.com/in/jorgemquiroz/}{linkedin.com/in/jorgemquiroz}\\
 \end{center}
 
 %==== Education ====%
@@ -82,16 +84,19 @@
 \textbf{The City College of New York, City University of New York (CUNY)}\hfill New York, NY\\
 Bachelor of Science, Computer Science \hfill  Expected May 2021\\
 \textbf{Relevant Coursework:} \\
-Data Structures, Algorithms, Software Design, Operating Systems, Database Systems
+Data Structures, Algorithms, Software Design, Software Engineering, Operating Systems, Database Systems, Computer Organization, Web Security, Intro to Machine Learning, Image Processing, Cryptography\\
+\textbf{Activities \& Awards:} \\
+CCNY UMAAN Chess Club (2018-Present), Lehman Hacks (2019)\\
+CCNY Winter Chess Tournament Champion (2019), Dean's List (2019, 2020)
 \vspace{2mm}
 
 \header{\textbf{Skills \& Interests}}
 \vspace{1mm}
 \begin{tabular}{ l l }
-	\textbf{Programming Languages:}   & Python, JavaScript, Java, Go, HTML/CSS, Swift, SQL                  \\
-	\textbf{Frameworks/Technologies:} & React, Node.js/Express, PostgreSQL, MongoDB, Git/GitHub, Vim \\
+	\textbf{Programming Languages:}   & Python, Go, JavaScript, Java, HTML/CSS, C++, SQL                  \\
+	\textbf{Frameworks/Technologies:} & React, Node.js/Express, Git/GitHub, Linux, Visual Studio Code \\
 	\textbf{Spoken Languages:}        & Spanish (Native), French (Conversational)                    \\
-	\textbf{Interests:}               & Sports, Traveling, Pool, Chess, Car Enthusiast           \\
+	\textbf{Interests:}               & Open Source Software, Sports, Traveling, Guitar, Chess           \\
 \end{tabular}
 \vspace{2mm}
 
@@ -100,11 +105,12 @@ Data Structures, Algorithms, Software Design, Operating Systems, Database System
 \vspace{1mm}
 
 \textbf{CUNY Tech Prep - NYC Tech Talent Pipeline} \hfill New York, NY\\
-\textit{Student Software Developer} \hfill June 2019 - Present\\
+\textit{Student Software Developer} \hfill June 2019 - June 2020\\
 \vspace{-3mm}
 \begin{itemize} \itemsep -2pt
-	\item Selected for a full stack JavaScript training program, as one of 125 students out of 400+ applicants
+	\item Selected for a full stack JavaScript / Data Science training program, as one of 125 students out of 400+ applicants
 	\item Learning in-demand technologies like React, Node.js + Express, and PostgreSQL as well as industry best practices for design, implementation, and deployment such as MVC, version control with Git/GitHub, agile \& Scrum with Trello and Slack, test driven development, and CI/CD
+    \item Learning how to work with data and machine learning algorithms using pandas and scikit-learn as well as how to visualize data using Matplotlib and seaborn
 \end{itemize}
 \textbf{Facebook} \hfill New York, NY\\
 \textit{Above \& Beyond Computer Science (ABCS) Student} \hfill September 2019 - November 2019\\
@@ -114,8 +120,19 @@ Data Structures, Algorithms, Software Design, Operating Systems, Database System
 	\item Gained in-depth and applied practice to master common data structures and algorithms and learn technical interview best practices
 \end{itemize}
 
-\header{\textbf{Projects} \hfill github.com/JQuiroz728} 
+
+%==== Projects ====%
+\header{\textbf{Projects} \hfill \href{https://github.com/JQuiroz728}{github.com/JQuiroz728}}
 \vspace{1mm}
+
+{\textbf{\href{https://boring-snyder-ca2ec9.netlify.app/}{NYC, Visualized}}} {\sl React} \hfill March 2020 - May 2020\\
+\vspace{-3mm}
+\begin{itemize} \itemsep -2pt
+	\item Designed and built a culminating application utilizing web development and data science skills gained through my time at CUNY Tech Prep
+    \item Developed a website using React and created data visualizations using Flourish.studio based off data sets gathered from NYC Open Data
+    \item Presented to industry professionals and attendees at a virtual demo night and received positive feedback
+    
+    \end{itemize}
 
 {\textbf{Bluhr}} {\sl Go} \hfill September 2019 - October 2019\\
 \vspace{-3mm}
@@ -133,13 +150,32 @@ Data Structures, Algorithms, Software Design, Operating Systems, Database System
     \item Built RESTful API using Express.js to generate and process new recipes daily
     \end{itemize}
 
-{\textbf{Cross The Road}} {\sl Python} \hfill April 2019\\
-\vspace{-3mm}
-\begin{itemize} \itemsep -2pt
-	\item Implemented a single player game consisting of a player moving along a map through various levels with the objective of reaching a goal while trying to avoid collisions with enemies and obstacles
-    \item Developed a graphical user interface using Python and the Pygame library to efficiently process user movements and object collisions
-    \end{itemize}
+% {\textbf{Cross The Road}} {\sl Python} \hfill April 2019\\
+% \vspace{-3mm}
+% \begin{itemize} \itemsep -2pt
+% 	\item Implemented a single player game consisting of a player moving along a map through various levels with the objective of reaching a goal while trying to avoid collisions with enemies and obstacles
+%     \item Developed a graphical user interface using Python and the Pygame library to efficiently process user movements and object collisions
+%     \end{itemize}
 
+%==== Experience ====%
+% \header{\textbf{Relevant Experience}}
+% \vspace{1mm}
+
+% \textbf{CUNY Tech Prep - NYC Tech Talent Pipeline} \hfill New York, NY\\
+% \textit{Student Software Developer} \hfill June 2019 - June 2020\\
+% \vspace{-3mm}
+% \begin{itemize} \itemsep -2pt
+% 	\item Selected for a full stack JavaScript / Data Science training program, as one of 125 students out of 400+ applicants
+% 	\item Learning in-demand technologies like React, Node.js + Express, and PostgreSQL as well as industry best practices for design, implementation, and deployment such as MVC, version control with Git/GitHub, agile \& Scrum with Trello and Slack, test driven development, and CI/CD
+%     \item Learning how to work with data and machine learning algorithms using pandas and scikit-learn as well as how to visualize data using Matplotlib and seaborn
+% \end{itemize}
+% \textbf{Facebook} \hfill New York, NY\\
+% \textit{Above \& Beyond Computer Science (ABCS) Student} \hfill September 2019 - November 2019\\
+% \vspace{-3mm}
+% \begin{itemize} \itemsep -2pt
+% 	\item Selected for a competitive workshop series that provides extensive preparation for technical interviews
+% 	\item Gained in-depth and applied practice to master common data structures and algorithms and learn technical interview best practices
+% \end{itemize}
 
 %==== Experience ====%
 \header{\textbf{Supporting Experience}}
@@ -154,7 +190,6 @@ Data Structures, Algorithms, Software Design, Operating Systems, Database System
     \item Deliver food and beverages to customers in the neighborhood
     \item Notify any dining area issues to management promptly
 \end{itemize}
-
 
 
 \ 
